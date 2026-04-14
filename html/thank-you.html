@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You | Precision Auto Body</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/thank-you.css">
+  <title>Thank You | Grease Monkey Auto Body</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/thank-you.css">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header class="header">
   <div class="container">
     <div class="logo">
-      <h1>🔧 Precision Auto Body</h1>
+      <h1>🔧 Grease Monkey Auto Body</h1>
       <p>Nassau · East Bay Street</p>
     </div>
   </div>
@@ -28,7 +30,7 @@
       <div class="thankyou-details" id="requestSummary"></div>
       
       <div class="thankyou-actions">
-        <a href="index.html" class="btn btn-primary">← Back to home</a>
+        <a href="../index.html" class="btn btn-primary">← Back to home</a>
         <a href="https://wa.me/12425554321" class="btn btn-outline">💬 Contact us on WhatsApp</a>
       </div>
       
@@ -40,14 +42,89 @@
     </div>
   </div>
 </main>
-
+<!-- Footer with Social Media & WhatsApp -->
 <footer class="footer">
   <div class="container">
-    <p>© 2025 Precision Auto Body Nassau — We'll take care of your car.</p>
+    <div class="footer-grid">
+      <!-- Business Info -->
+      <div class="footer-col">
+        <h3>🔧 Grease Monkey Auto Body</h3>
+        <p>Quality collision repair trusted by Nassau drivers since 2010.</p>
+        <div class="footer-contact-info">
+          <p><i class="fas fa-phone"></i> <a href="tel:+12425554321">(242) 555-4321</a></p>
+          <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/12425554321" target="_blank">WhatsApp (242) 555-4321</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:repair@precisionautobody.bs">repair@precisionautobody.bs</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> East Bay Street, Nassau, Bahamas</p>
+        </div>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick links</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Before & After</a></li>
+          <li><a href="quote.html">Get a Quote</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Hours -->
+      <div class="footer-col">
+        <h3>Business hours</h3>
+        <ul class="footer-hours">
+          <li><span>Monday - Friday:</span> 8am – 5pm</li>
+          <li><span>Saturday:</span> 9am – 1pm</li>
+          <li><span>Sunday:</span> Closed</li>
+        </ul>
+        <div class="emergency-note">
+          <i class="fas fa-clock"></i> Emergency repairs? Call us anytime.
+        </div>
+      </div>
+      
+      <!-- Social Media (Prominent as requested) -->
+      <div class="footer-col">
+        <h3>Follow us</h3>
+        <div class="social-grid">
+          <a href="https://facebook.com/yourpage" class="social-btn facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+          <a href="https://instagram.com/yourpage" class="social-btn instagram" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://tiktok.com/@yourpage" class="social-btn tiktok" target="_blank">
+            <i class="fab fa-tiktok"></i> TikTok
+          </a>
+          <a href="https://wa.me/12425554321" class="social-btn whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+        
+        <!-- WhatsApp Prominent Badge (Bahamas loves WhatsApp) -->
+        <div class="whatsapp-badge">
+          <i class="fab fa-whatsapp"></i> 
+          <span>Message us on WhatsApp for a free estimate!</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Grease Monkey Auto Body Nassau. All rights reserved. Serving Nassau, Paradise Island, and all Bahamas.</p>
+      <p class="design-credit">Built with ❤️ for Bahamas local business</p>
+    </div>
   </div>
 </footer>
 
+<!-- Floating WhatsApp Button (very prominent for Nassau users) -->
+<a href="https://wa.me/12425554321?text=Hello!%20I%20need%20a%20free%20estimate%20for%20my%20car" 
+   class="float-whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+  <span>Chat on WhatsApp</span>
+</a>
+
 <script src="js/utils.js"></script>
-<script src="js/thankyou.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/form.js"></script>
 </body>
 </html>
