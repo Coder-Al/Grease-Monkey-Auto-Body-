@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Request a Quote | Precision Auto Body</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <h1>🔧 Grease Monkey Auto Body</h1>
+      <p>Nassau · East Bay Street</p>
+    </div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#services">Services</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="form.html" class="active">Get Quote</a>
+    </nav>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="form-page">
+    <div class="container">
+      <div class="form-header">
+        <h1>Free Estimate Request</h1>
+        <p>Fill out the form below and we'll get back to you within 2 hours during business hours.</p>
+      </div>
+      
+      <div class="form-wrapper">
+        <div class="form-sidebar">
+          <div class="info-card">
+            <h3>📞 Contact us directly</h3>
+            <p><strong>Phone:</strong> <a href="tel:+12425554321">(242) 555-4321</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/12425554321">(242) 555-4321</a></p>
+            <p><strong>Email:</strong> <a href="mailto:repair@precisionautobody.bs">repair@precisionautobody.bs</a></p>
+          </div>
+          
+          <div class="info-card">
+            <h3>📍 Visit our shop</h3>
+            <p>East Bay Street, Nassau<br>(next to Auto Marine)</p>
+            <p><strong>Hours:</strong><br>
+            Mon-Fri: 8am – 5pm<br>
+            Sat: 9am – 1pm<br>
+            Sun: Closed</p>
+          </div>
+          
+          <div class="info-card">
+            <h3>✨ What happens next?</h3>
+            <ol>
+              <li>We review your request</li>
+              <li>We contact you within 2 hours</li>
+              <li>We schedule a free inspection</li>
+              <li>You get a written estimate</li>
+            </ol>
+          </div>
+        </div>
+        
+        <form id="estimateForm" class="quote-form">
+          <div class="form-group">
+            <label for="name">Full name *</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email address *</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone number *</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="carModel">Car make & model</label>
+            <input type="text" id="carModel" name="carModel" placeholder="e.g., Toyota Corolla 2018" autocomplete="off">
+          </div>
+          
+          <div class="form-group">
+            <label for="damageType">Type of damage *</label>
+            <select id="damageType" name="damageType" required>
+              <option value="">Select one...</option>
+              <option value="collision">Collision / Accident</option>
+              <option value="dent">Dent / Ding</option>
+              <option value="scratch">Scratch / Paint damage</option>
+              <option value="bumper">Bumper damage</option>
+              <option value="frame">Frame damage</option>
+              <option value="other">Other / Not sure</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Describe the damage / service needed *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Please be as detailed as possible..."></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="preferredContact">Preferred contact method</label>
+            <div class="radio-group">
+              <label><input type="radio" name="preferredContact" value="phone" checked> 📞 Phone call</label>
+              <label><input type="radio" name="preferredContact" value="whatsapp"> 💬 WhatsApp</label>
+              <label><input type="radio" name="preferredContact" value="email"> ✉️ Email</label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="agreeTerms" required>
+              <span>I agree to be contacted regarding my estimate request *</span>
+            </label>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-submit">Send request →</button>
+          <p class="form-note">* Required fields. We respect your privacy and won't share your information.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 Precision Auto Body Nassau — We'll take care of your car.</p>
+  </div>
+</footer>
+
+<script src="../js/utils.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/form.js"></script>
+</body>
+</html>
